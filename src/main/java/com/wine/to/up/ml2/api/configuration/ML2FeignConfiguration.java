@@ -17,7 +17,7 @@ public class ML2FeignConfiguration {
     private final ML2ApiProperties ml2ApiProperties;
 
     @Bean
-    public ML2WineRecommendationServiceClient wineRecommendationServiceClient() {
+    public ML2WineRecommendationServiceClient ml2WineRecommendationServiceClient() {
         return Feign.builder()
                 .encoder(new GsonEncoder())
                 .decoder(new GsonDecoder())
